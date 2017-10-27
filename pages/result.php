@@ -4,7 +4,8 @@ require_once('./templates/head.html');
 require_once('./templates/foot.html');
 
 $results = 0;
-if($_GET["mada"] === "antananarivo"){
+
+if($_GET[0] === "antananarivo"){
   $results = $results + 1;
 } else {
   $results = $results;

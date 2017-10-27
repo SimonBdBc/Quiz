@@ -3,13 +3,27 @@
 require_once('./templates/head.html');
 require_once('./templates/foot.html');
 
+function createSelect($name, $label, $options)
+{
+    $html= "<label>" . $label ."</label>";
+    $html.= "<select name='" . $name ."'>";
+    foreach ($options as $key => $value) {
+      $html .= "<option value'" . $value['value'] . "'>" . $value['content'] . "</option>";
+    }
+    $html .= "</select>";
+    return $html;
+}
+
+
 $results = 0;
-if($_GET["mada"] === "antananarivo"){
+if($value["mada"] === "antananarivo"){
   $results = $results + 1;
 } else {
   $results = $results;
 }
-if($_GET["namb"] === "windhoek"){
+
+/*
+if($_GET["nami"] === "windhoek"){
   $results = $results + 1;
 } else {
   $results = $results;

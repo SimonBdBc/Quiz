@@ -1,4 +1,6 @@
 body{
+
+
   margin: 0;
   background: url("../image/grey.png") center, center;
   font-family: 'Open Sans',cursive;
@@ -26,6 +28,10 @@ input{
   font-size: 30px;
 }
 select{
+  display: flex;
   width: 150px;
   margin: 5px;
+}
+form{
+  text-align: left;
 }
